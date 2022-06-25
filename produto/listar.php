@@ -1,5 +1,5 @@
 <?php
-include_once("../listarConexao.php");
+include_once("./listarConexao.php");
 
 $dados = array();
 

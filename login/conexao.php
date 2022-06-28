@@ -1,15 +1,7 @@
 <?php
-$servidor = "localhost";
-$dbname = "hello_stock";
-$usuario = "root";
-$senha = "";
 
-date_default_timezone_set('America/Sao_Paulo');
+$connectionInfo = array("UID" => "admin_sql", "pwd" => "@\$qL#3teC", "Database" => "Hello_Stock", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$serverName = "tcp:hellostock.database.windows.net,1433";
+$conexao = sqlsrv_connect($serverName, $connectionInfo);
 
-try{
-    $conexao = mysqli_connect($servidor,$usuario, $senha, $dbname );   
-} catch (Exception $e){
-    echo "Erro ao se conectar com o banco de dados!"  .$e;
-
-}
 ?>

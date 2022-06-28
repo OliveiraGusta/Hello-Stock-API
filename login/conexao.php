@@ -4,4 +4,8 @@ $connectionInfo = array("UID" => "admin_sql", "pwd" => "@\$qL#3teC", "Database" 
 $serverName = "tcp:hellostock.database.windows.net,1433";
 $conexao = sqlsrv_connect($serverName, $connectionInfo);
 
+If($conexao == true){
+    echo 'ok';
+}
+
 ?>
